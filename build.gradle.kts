@@ -30,3 +30,10 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
 
 }
+
+// ./gradlew runWorkaround
+task<JavaExec>("runWorkaround") {
+    group = "application"
+    mainClass = "com.example.WorkaroundApplicationKt"
+    classpath = sourceSets["main"].runtimeClasspath
+}
