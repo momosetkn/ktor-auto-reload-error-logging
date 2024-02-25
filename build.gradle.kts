@@ -37,3 +37,11 @@ task<JavaExec>("runWorkaround") {
     mainClass = "com.example.WorkaroundApplicationKt"
     classpath = sourceSets["main"].runtimeClasspath
 }
+
+
+// ./gradlew runWorkaround2
+task<JavaExec>("runWorkaround2") {
+    group = "application"
+    mainClass = "com.example.WorkaroundApplication2Kt"
+    classpath = sourceSets["main"].runtimeClasspath
+}
