@@ -1,3 +1,7 @@
+# description
+
+This project is reproduction of Ktor becoming unresponsive when a plugin errors during auto-reload.
+
 # launch ktor
 
 ```bash
